@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: rgb(218, 218, 218);
+            margin-top: 0px;
+            max-width: 300px;
+            margin-left: 39%;
+            padding: 30px;
+            text-align: left;
+        }
+        button{
+            background-color: rgb(253, 253, 253);
+        }
+        h2{
+            color: rgb(255, 255, 255);
+            font-size: medium;
+            font-family: Cambria;
+            font-size: xx-large;
+            font-style: inherit;
+        }
+        body{
+            background-color: rgb(28, 41, 100);
+        }
+    </style>
+</head>
+<body>
+
+    <center><h2><hr>Cadastro de produto<hr></h2></center>
+    <form action="cadastro.php" method="post">
+        <label>Nome do produto:</label>
+        <br>
+        <input type="text" name="nome" required>
+        <br><br>
+        <label>Quantidade:</label>
+        <br>
+        <input type="number" name="qtd" required>
+        <br><br>
+        <label>Preço Unitário:</label>
+        <br>
+        <input type="number" name="preco" required>
+        <br><br>
+        <label>Fornecedor:</label>
+        <br>
+        <input type="text" name="fornecedor" required>
+        <br><br>
+        <label>Data da compra:</label>
+        <br>
+        <input type="date" name="data_compra" required>
+        <br><br>
+        <center><button type="submit">Cadastrar</button></center>
+    </form>
+    <center><img src="imagem04.png" alt="login" height="500px" width="500px"></center>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    
+</body>
+</html>
